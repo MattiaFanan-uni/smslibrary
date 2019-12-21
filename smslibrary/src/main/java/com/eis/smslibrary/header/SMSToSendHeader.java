@@ -17,8 +17,9 @@ public final class SMSToSendHeader extends AbstractSMSHeader implements Destinat
      * Constructor for SMSToSendHeader
      *
      * @param destinationPeer the peer to store in this header
+     * @throws IllegalArgumentException when null peer found
      */
-    public SMSToSendHeader(@NonNull SMSPeer destinationPeer) {
+    public SMSToSendHeader(@NonNull SMSPeer destinationPeer) throws IllegalArgumentException {
         super(destinationPeer);
     }
 

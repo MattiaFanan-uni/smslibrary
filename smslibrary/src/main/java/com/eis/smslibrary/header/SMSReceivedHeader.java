@@ -17,8 +17,9 @@ public final class SMSReceivedHeader extends AbstractSMSHeader implements Source
      * Constructor for SMSReceivedHeader
      *
      * @param sourcePeer the peer to store in this header
+     * @throws IllegalArgumentException when null peer found
      */
-    public SMSReceivedHeader(@NonNull SMSPeer sourcePeer) {
+    public SMSReceivedHeader(@NonNull SMSPeer sourcePeer) throws IllegalArgumentException {
         super(sourcePeer);
     }
 

@@ -26,10 +26,11 @@ public class AbstractSMSHeader implements Header<String> {
      * Constructor for AbstractSMSHeader
      *
      * @param peer the peer to be stored in this header
+     * @throws IllegalArgumentException when null peer found
      */
-    public AbstractSMSHeader(@NonNull SMSPeer peer) {
+    public AbstractSMSHeader(@NonNull SMSPeer peer) throws IllegalArgumentException{
         if (peer == null)
-            throw new NullPointerException();
+            throw new IllegalArgumentException();
 
         this.peer = peer;
     }

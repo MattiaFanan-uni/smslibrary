@@ -40,11 +40,12 @@ public class AbstractSMSMessage<H extends Header<String>> implements Message<H,S
      * @param messageHeader the header of this message
      * @param messageText   the content of this message, can be empty but not null
      * @throws InvalidSMSMessageException if {@link #checkMessageText} is different from MESSAGE_TEXT_VALID
+     * @throws IllegalArgumentException if when null <code>messageText</code> or null <code>messageHeader</code> is found
      */
-    public AbstractSMSMessage(@NonNull final H messageHeader, @NonNull final String messageText) throws InvalidSMSMessageException {
+    public AbstractSMSMessage(@NonNull final H messageHeader, @NonNull final String messageText) throws InvalidSMSMessageException,IllegalArgumentException {
 
         if(messageHeader == null || messageText == null)
-            throw new NullPointerException();
+            throw new IllegalArgumentException();
 
         //Checks on the message text
         ContentState contentState = checkMessageText(messageText);

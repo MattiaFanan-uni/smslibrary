@@ -19,8 +19,9 @@ public final class SMSMessageReceived extends AbstractSMSMessage<SMSReceivedHead
      * @param messageHeader the header of the this message
      * @param messageText   the content of this message, can be empty but not null
      * @throws InvalidSMSMessageException if {@link AbstractSMSMessage#checkMessageText} is different from MESSAGE_TEXT_VALID
+     * @throws IllegalArgumentException if when null <code>messageText</code> or null <code>messageHeader</code> is found
      */
-    public SMSMessageReceived(@NonNull final SMSReceivedHeader messageHeader, @NonNull final String messageText) throws InvalidSMSMessageException {
+    public SMSMessageReceived(@NonNull final SMSReceivedHeader messageHeader, @NonNull final String messageText) throws InvalidSMSMessageException,IllegalArgumentException {
         super(messageHeader, messageText);
     }
 
