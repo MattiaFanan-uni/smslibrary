@@ -6,7 +6,7 @@ import com.eis.smslibrary.exceptions.InvalidSMSMessageException;
 import com.eis.smslibrary.header.SMSReceivedHeader;
 
 /**
- * SMSReceivedHeader is {@link AbstractSMSMessage} extension taking as <code>Header</code> {@link SMSReceivedHeader}
+ * SMSReceivedHeader is an {@link AbstractSMSMessage} extension taking as <code>Header</code> {@link SMSReceivedHeader}
  *
  * @author Mattia Fanan
  * @since 08/12/2019 (gg/mm/aaaa)

@@ -6,7 +6,7 @@ import com.eis.smslibrary.exceptions.InvalidSMSMessageException;
 import com.eis.smslibrary.header.SMSToSendHeader;
 
 /**
- * SMSMessageToSend is {@link AbstractSMSMessage} extension taking as <code>Header</code> {@link SMSToSendHeader}
+ * SMSMessageToSend is an {@link AbstractSMSMessage} extension taking as <code>Header</code> {@link SMSToSendHeader}
  *
  * @author Mattia Fanan
  * @since 08/12/2019 (gg/mm/aaaa)
