@@ -18,7 +18,7 @@ public final class SMSMessageToSend extends AbstractSMSMessage<SMSToSendHeader> 
      * @param messageHeader the header of the this message
      * @param messageText   the content of this message, can be empty but not null
      * @throws InvalidSMSMessageException if {@link AbstractSMSMessage#checkMessageText} is different from MESSAGE_TEXT_VALID
-     * @throws IllegalArgumentException if when null <code>messageText</code> or null <code>messageHeader</code> is found
+     * @throws IllegalArgumentException if <code>messageText</code> or <code>messageHeader</code> are <code>null</code>
      */
     public SMSMessageToSend(@NonNull SMSToSendHeader messageHeader, @NonNull String messageText) throws InvalidSMSMessageException,IllegalArgumentException {
         super(messageHeader, messageText);

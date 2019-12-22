@@ -5,10 +5,10 @@ import com.eis.communication.header.Header;
 import java.io.Serializable;
 
 /**
- * Encapsulation of a message in the network
+ * Represents a message with header and payload data
  *
  * @param <H> {@link Header} containing all message's service information
- * @param <D> data to be transmitted
+ * @param <D> type of data in the payload
  * @see Serializable
  */
 public interface Message<H extends Header<D>, D extends Serializable> extends Serializable {

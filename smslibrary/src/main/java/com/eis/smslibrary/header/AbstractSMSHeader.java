@@ -26,9 +26,9 @@ public class AbstractSMSHeader implements Header<String> {
      * Constructor for AbstractSMSHeader
      *
      * @param peer the peer to be stored in this header
-     * @throws IllegalArgumentException when null peer found
+     * @throws IllegalArgumentException when <code>peer</code> passed is null
      */
-    public AbstractSMSHeader(@NonNull SMSPeer peer) throws IllegalArgumentException{
+    protected AbstractSMSHeader(@NonNull SMSPeer peer) throws IllegalArgumentException{
         if (peer == null)
             throw new IllegalArgumentException();
 

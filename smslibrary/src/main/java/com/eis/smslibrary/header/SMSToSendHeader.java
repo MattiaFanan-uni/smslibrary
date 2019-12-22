@@ -6,7 +6,7 @@ import com.eis.communication.header.DestinationPeerHeader;
 import com.eis.smslibrary.SMSPeer;
 
 /**
- * SMSToSendHeader is {@link AbstractSMSHeader} extension implementing {@link DestinationPeerHeader} in order to obtain a suitable header for {@link com.eis.smslibrary.message.SMSMessageToSend}
+ * SMSToSendHeader is an {@link AbstractSMSHeader} extension implementing {@link DestinationPeerHeader} in order to obtain a suitable header for {@link com.eis.smslibrary.message.SMSMessageToSend}
  *
  * @author Mattia Fanan
  * @since 08/12/2019 (gg/mm/aaaa)
@@ -17,7 +17,7 @@ public final class SMSToSendHeader extends AbstractSMSHeader implements Destinat
      * Constructor for SMSToSendHeader
      *
      * @param destinationPeer the peer to store in this header
-     * @throws IllegalArgumentException when null peer found
+     * @throws IllegalArgumentException when <code>destinationPeer</code> passed is <code>null</code>
      */
     public SMSToSendHeader(@NonNull SMSPeer destinationPeer) throws IllegalArgumentException {
         super(destinationPeer);

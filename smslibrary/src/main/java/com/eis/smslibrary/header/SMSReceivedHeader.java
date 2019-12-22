@@ -6,7 +6,7 @@ import com.eis.communication.header.SourcePeerHeader;
 import com.eis.smslibrary.SMSPeer;
 
 /**
- * SMSReceivedHeader is {@link AbstractSMSHeader} extension implementing {@link SourcePeerHeader} in order to obtain a suitable header for {@link com.eis.smslibrary.message.SMSMessageReceived}
+ * SMSReceivedHeader is an {@link AbstractSMSHeader} extension implementing {@link SourcePeerHeader} in order to obtain a suitable header for {@link com.eis.smslibrary.message.SMSMessageReceived}
  *
  * @author Mattia Fanan
  * @since 08/12/2019 (gg/mm/aaaa)
@@ -17,7 +17,7 @@ public final class SMSReceivedHeader extends AbstractSMSHeader implements Source
      * Constructor for SMSReceivedHeader
      *
      * @param sourcePeer the peer to store in this header
-     * @throws IllegalArgumentException when null peer found
+     * @throws IllegalArgumentException when <code>sourcePeer</code> passed is <code>null</code>
      */
     public SMSReceivedHeader(@NonNull SMSPeer sourcePeer) throws IllegalArgumentException {
         super(sourcePeer);

@@ -31,8 +31,8 @@ public class AbstractSMSMessage<H extends Header<String>> implements Message<H,S
      * (suggestions accepted)
      */
     public static final int MAX_MESSAGE_TEXT_LENGTH = 155;
-    protected String messageContent;
-    protected H messageHeader;
+    private String messageContent;
+    private H messageHeader;
 
     /**
      * Constructor for <code>AbstractSMSMessage</code>
@@ -40,9 +40,9 @@ public class AbstractSMSMessage<H extends Header<String>> implements Message<H,S
      * @param messageHeader the header of this message
      * @param messageText   the content of this message, can be empty but not null
      * @throws InvalidSMSMessageException if {@link #checkMessageText} is different from MESSAGE_TEXT_VALID
-     * @throws IllegalArgumentException if when null <code>messageText</code> or null <code>messageHeader</code> is found
+     * @throws IllegalArgumentException if <code>messageText</code> or <code>messageHeader</code> is <code>null</code>
      */
-    public AbstractSMSMessage(@NonNull final H messageHeader, @NonNull final String messageText) throws InvalidSMSMessageException,IllegalArgumentException {
+    protected AbstractSMSMessage(@NonNull final H messageHeader, @NonNull final String messageText) throws InvalidSMSMessageException,IllegalArgumentException {
 
         if(messageHeader == null || messageText == null)
             throw new IllegalArgumentException();

@@ -36,7 +36,7 @@ public class SMSToSendHeaderTest {
         }
     }
 
-    @Test(expected = NullPointerException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void setUPNull() {
         new SMSToSendHeader(nullPeer);
         Assert.fail("should throw NullPointerException");
