@@ -14,7 +14,7 @@ import java.io.Serializable;
 public interface Message<H extends Header<D>, D extends Serializable> extends Serializable {
 
     /**
-     * Gets the data contained in this message
+     * Gets the payload data contained in this message
      *
      * @return data contained in this message
      */

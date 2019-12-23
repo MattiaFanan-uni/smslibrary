@@ -72,7 +72,7 @@ public class AbstractSMSMessage<H extends Header<String>> implements Message<H,S
     }
 
     /**
-     * Gets the data stored in this message
+     * Gets the payload data stored in this message
      *
      * @return the data contained in this message
      */
@@ -93,7 +93,7 @@ public class AbstractSMSMessage<H extends Header<String>> implements Message<H,S
 
     /**
      * Possible states of a message after a check
-     * There could be more in future so it has been used an enum
+     * There could be more in future, so an enum has been used
      * <p>
      * These are used in {@link #checkMessageText}
      */
