@@ -16,7 +16,7 @@ public interface Message<H extends Header<D>, D extends Serializable> extends Se
     /**
      * Gets the payload data contained in this message
      *
-     * @return data contained in this message
+     * @return the payload data contained in this message
      */
     D getData();
 
