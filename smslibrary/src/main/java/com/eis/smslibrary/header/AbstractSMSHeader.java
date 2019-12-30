@@ -20,7 +20,7 @@ import com.eis.smslibrary.SMSPeer;
 public class AbstractSMSHeader implements Header<String> {
     //protocol identifier
     public static final String ID = "ϕ";
-    protected SMSPeer peer;
+    protected final SMSPeer peer;
 
     /**
      * Constructor for AbstractSMSHeader
