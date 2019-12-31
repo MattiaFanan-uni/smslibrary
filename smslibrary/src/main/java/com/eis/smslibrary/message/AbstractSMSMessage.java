@@ -72,9 +72,9 @@ public class AbstractSMSMessage<H extends Header<String>> implements Message<H,S
     }
 
     /**
-     * Gets the payload data stored in this message
+     * Gets the data contained in the payload of this message
      *
-     * @return the payload data contained in this message
+     * @return the data contained in the payload of this message
      */
     @Override
     public String getData() {

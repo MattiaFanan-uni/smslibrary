@@ -36,9 +36,9 @@ public class AbstractSMSHeader implements Header<String> {
     }
 
     /**
-     * Gets the ID associated with the protocol the message having this header is implementing
+     * Gets the identifier of the PDU type the Message having this header is implementing
      *
-     * @return protocol message's ID
+     * @return the identifier of the PDU type the Message having this header is implementing
      */
     @Override
     public String getID() {
